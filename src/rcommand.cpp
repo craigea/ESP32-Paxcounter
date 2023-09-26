@@ -67,7 +67,7 @@ void set_sendcycle(uint8_t val[]) {
   // update send cycle interrupt [seconds / 2]
   cfg.sendcycle = val[0];
   ESP_LOGI(TAG, "Remote command: set send cycle to %u seconds",
-           cfg.sendcycle * 2);
+           cfg.sendcycle * 4);
   libpax_counter_stop();
   init_libpax();
 }
